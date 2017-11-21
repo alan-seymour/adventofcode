@@ -14,6 +14,7 @@ const runSolver = async (args) => {
       console.log(solve(solver, args.part, data));
     } catch (e) {
       console.error('Error Solving');
+      console.error(e.message);
     }
   }
 };
