@@ -13,5 +13,6 @@ module.exports = {
   201603: puzzle1603,
   201604: puzzle1604,
   201701: puzzle1701,
+  201704: puzzle1704,
   201705: puzzle1705,
 };
