@@ -1,3 +1,4 @@
+
 const orderWord = word => word.split('').sort().join();
 
 const splitWords = numberString => numberString.split(/\s/).map(v => orderWord(v.trim()));
@@ -11,3 +12,6 @@ const buildUniqueSentence = array => array.filter((v, i) => array.indexOf(v) ===
 const solve = lines => lines.filter(line => buildUniqueSentence(line).length === line.length).length;
 
 module.exports = (part, data) => solve(buildInputArrays(data));
+
+// code golfed
+// module.exports = (part, data) => data.split(/\r?\n/).map(line => line.trim().split(/\s/).map(word => word.trim().split('').sort().join())).filter(line => line.filter((v, i) => line.indexOf(v) === i).length === line.length).length;
