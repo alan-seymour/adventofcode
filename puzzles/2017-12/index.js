@@ -25,7 +25,7 @@ const findGroup = (nodes, start) => {
   return linkedNodes;
 };
 
-const part2 = (nodes) => {
+const findAllGroups = (nodes) => {
   const totalNodes = nodes.length;
   const groups = [];
   let groupedNodes = [];
@@ -36,7 +36,7 @@ const part2 = (nodes) => {
     groups.push(nextGroup);
     groupedNodes = [...groupedNodes, ...nextGroup];
   }
-  return groups.length;
+  return groups;
 };
 
 module.exports = (part, data) => {
@@ -45,6 +45,6 @@ module.exports = (part, data) => {
   if (part === 1) {
     return findGroup(nodes, '0').length;
   }
-  return part2(nodes);
+  return findAllGroups(nodes).length;
 };
 
