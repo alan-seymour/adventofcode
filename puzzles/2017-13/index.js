@@ -5,8 +5,6 @@ const layerDepth = (line) => {
   return {
     layer: parseInt(layer, 10),
     depth: parseInt(depth, 10),
-    position: 0,
-    direction: 1,
     interval: (depth - 1) * 2,
   };
 };
