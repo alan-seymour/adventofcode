@@ -21,6 +21,7 @@ const puzzle1716 = require('./2017-16');
 const puzzle1717 = require('./2017-17');
 const puzzle1719 = require('./2017-19');
 const puzzle1720 = require('./2017-20');
+const puzzle1721 = require('./2017-21');
 
 module.exports = {
   201601: puzzle1601,
@@ -45,4 +46,5 @@ module.exports = {
   201717: puzzle1717,
   201719: puzzle1719,
   201720: puzzle1720,
+  201721: puzzle1721,
 };
