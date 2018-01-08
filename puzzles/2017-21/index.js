@@ -108,8 +108,6 @@ const enhanceFullGrid = (grid, rules) => {
   return joinGrids(enhanced);
 };
 
-// TODO need to rejoin grids into big grid after each enhancement,
-// then split apart afterwards to handle case where is divisible by 2 and 3
 const solve = (rules, iterations = 5) => {
   let grid = stringToGrid(startingImage);
   for (let i = 0; i < iterations; i++) {
